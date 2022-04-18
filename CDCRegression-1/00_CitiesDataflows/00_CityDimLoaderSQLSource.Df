@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DataflowDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="9.0.0.317">
+<DataflowDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ProductVersion="9.1.1.192">
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Git\DWA-Final Regression_Updated\DWA-Final Regression\CDCRegressions\SQLServer\CDCRegression-1\00_CitiesDataflows\00_CityDimLoaderSQLSource.Df</Name>
+  <Name>C:\RC9.1-Git\CDCRegression-1\00_CitiesDataflows\00_CityDimLoaderSQLSource.Df</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -28,8 +28,8 @@
           <NormalBounds>
             <Height>220</Height>
             <Width>180</Width>
-            <X>75</X>
-            <Y>32</Y>
+            <X>69</X>
+            <Y>173</Y>
             <IsExpanded>true</IsExpanded>
             <IsSorted>false</IsSorted>
           </NormalBounds>
@@ -60,7 +60,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="CityID" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityID" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="CityID">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="CityID" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="CityID" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="CityID">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>5daae552-74b0-4e41-8e63-9e6c3a93aea7</UniqueId>
               <RegressionType>None</RegressionType>
@@ -93,7 +93,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="50" DataType="String" IsPrimaryKey="false" Header="CityName" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityName" DbDataTypeName="NVARCHAR" DecimalLength="0" SurvivorValueType="New" CoreDbType="NVarChar" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="true" IsSystemGenerated="false" ColumnName="CityName">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="50" DataType="String" IsPrimaryKey="false" Header="CityName" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="CityName" DbDataTypeName="NVARCHAR" DecimalLength="0" SurvivorValueType="New" CoreDbType="NVarChar" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="true" IsSystemGenerated="false" ColumnName="CityName">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>dd249ec6-5275-414d-bd9b-5bd4e93e869b</UniqueId>
               <RegressionType>None</RegressionType>
@@ -126,7 +126,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="StateProvinceID" Index="2" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="StateProvinceID" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="StateProvinceID">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="StateProvinceID" Index="2" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="StateProvinceID" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="StateProvinceID">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>07f6d1a4-5875-4e7f-9e73-3cd8e1569852</UniqueId>
               <RegressionType>None</RegressionType>
@@ -159,7 +159,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" Index="3" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LatestRecordedPopulation">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" Index="3" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LatestRecordedPopulation">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>069d0a26-85ef-4648-8ec5-d20baf18388c</UniqueId>
               <RegressionType>None</RegressionType>
@@ -192,7 +192,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="LastEditedBy" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LastEditedBy" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LastEditedBy">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="LastEditedBy" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="LastEditedBy" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LastEditedBy">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>3af1f17a-cedb-48f9-bf01-b37f976678a0</UniqueId>
               <RegressionType>None</RegressionType>
@@ -225,7 +225,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="ValidFrom" Index="5" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="ValidFrom" DbDataTypeName="DATETIME2" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="ValidFrom">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="ValidFrom" Index="5" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="ValidFrom" DbDataTypeName="DATETIME2" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="ValidFrom">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>1b7073f9-cf56-42bf-93a0-943cc1b60c3e</UniqueId>
               <RegressionType>None</RegressionType>
@@ -258,7 +258,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="ValidTo" Index="6" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="ValidTo" DbDataTypeName="DATETIME2" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="ValidTo">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="ValidTo" Index="6" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="ValidTo" DbDataTypeName="DATETIME2" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="ValidTo">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>84b82867-5738-43b7-802a-6373402f0a90</UniqueId>
               <RegressionType>None</RegressionType>
@@ -329,7 +329,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>StateProvinces</ActionName>
@@ -342,7 +341,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Cities</ActionName>
@@ -364,7 +362,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Cities</ActionName>
@@ -377,7 +374,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Customers</ActionName>
@@ -397,7 +393,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Cities</ActionName>
@@ -410,7 +405,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Customers</ActionName>
@@ -430,7 +424,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Cities</ActionName>
@@ -443,7 +436,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Suppliers</ActionName>
@@ -463,7 +455,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Cities</ActionName>
@@ -476,7 +467,6 @@
                 <DataModelEntityType>Unknown</DataModelEntityType>
                 <DimensionType>None</DimensionType>
                 <IsQueryable>true</IsQueryable>
-                <IsCdcEnabled>false</IsCdcEnabled>
                 <IsUpdateable>true</IsUpdateable>
                 <IsIntersect>false</IsIntersect>
                 <ActionName>Suppliers</ActionName>
@@ -491,8 +481,8 @@
             <AuditFieldValueStore>File</AuditFieldValueStore>
             <WhereClause />
             <DoNotAddWhereKeywordToUserWhereClause>false</DoNotAddWhereKeywordToUserWhereClause>
-            <IncrementalReadStrategy>None</IncrementalReadStrategy>
             <PartitionKeyValues />
+            <IncrementalReadStrategy>None</IncrementalReadStrategy>
             <IncrementalTransferKeys />
             <IncrementalTransferFilePath>
               <Path />
@@ -520,7 +510,6 @@
               <DataModelEntityType>Unknown</DataModelEntityType>
               <DimensionType>None</DimensionType>
               <IsQueryable>true</IsQueryable>
-              <IsCdcEnabled>false</IsCdcEnabled>
               <IsUpdateable>true</IsUpdateable>
               <IsIntersect>false</IsIntersect>
               <ActionName>Cities</ActionName>
@@ -558,7 +547,6 @@
           <UncPath />
         </CDCAuditFieldFile>
         <PerformFullLoad>false</PerformFullLoad>
-        <PerformCDC>false</PerformCDC>
         <DbInfo Port="1433" Protocol="http" AuthenticationType="SqlServerAuth" Policy="MBI_SSL" Partner="crm.dynamics.com" IsOnPremise="false" TNSNamesFilePath="" ConnectionTimeOut="15" CommandTimeOut="90" IsAccessWorkgroup="false" CreateNewTable="true" IsAccessExclusive="false" DataProvider="SqlServer" Server="VMQA401" Database="CDCSource" Schema="" EncryptedUser="76A26DC57C9A1986286555D1009F8F23" EncryptedPassword="FD54880F06604C1D2CEDAB5B0E56E19A" TableName="Cities" TableSchema="Application" UseWindowsAuthentication="false" UseCurrentDatabase="false">
           <IsReadOnly>false</IsReadOnly>
           <providerFilter>
@@ -631,7 +619,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="CityID" DefaultValue="" DBDefaultValue="" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityID" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="CityID">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="CityID" DefaultValue="" DBDefaultValue="" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="CityID" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="CityID">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>d94359d1-b947-43a6-a9ec-51c3be23234a</UniqueId>
               <RegressionType>None</RegressionType>
@@ -664,7 +652,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="50" DataType="String" IsPrimaryKey="false" Header="CityName" DefaultValue="" DBDefaultValue="" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityName" DbDataTypeName="STRING" DecimalLength="0" SurvivorValueType="New" CoreDbType="VarChar" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="true" IsSystemGenerated="false" ColumnName="CityName">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="50" DataType="String" IsPrimaryKey="false" Header="CityName" DefaultValue="" DBDefaultValue="" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="CityName" DbDataTypeName="STRING" DecimalLength="0" SurvivorValueType="New" CoreDbType="VarChar" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="true" IsSystemGenerated="false" ColumnName="CityName">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>0422cc69-0850-44a1-bc47-ff2141a61879</UniqueId>
               <RegressionType>None</RegressionType>
@@ -697,7 +685,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" DefaultValue="" DBDefaultValue="" Index="2" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LatestRecordedPopulation">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" DefaultValue="" DBDefaultValue="" Index="2" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LatestRecordedPopulation">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>01fb403f-e06c-473b-a121-f4f1c691e7bb</UniqueId>
               <RegressionType>None</RegressionType>
@@ -730,7 +718,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="true" Header="CitiesKey" Index="3" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CitiesKey" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="CitiesKey">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="true" Header="CitiesKey" Index="3" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="CitiesKey" DbDataTypeName="INTEGER" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="CitiesKey">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>f8ab0ee8-cb1f-47c3-88b9-ced1fe75539f</UniqueId>
               <RegressionType>None</RegressionType>
@@ -763,7 +751,7 @@
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </PrimaryKeyFieldId>
             </DbLayoutField>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="EffectiveDate" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="EffectiveDate" DbDataTypeName="DATE" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="EffectiveDate">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="7" DataType="Date" IsPrimaryKey="false" Header="EffectiveDate" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="EffectiveDate" DbDataTypeName="DATE" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="true" IsDecimalAllowed="true" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="EffectiveDate">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>06dcc885-c61e-45b4-9968-c820e14db753</UniqueId>
               <RegressionType>None</RegressionType>
@@ -828,8 +816,8 @@
             <FilterRules />
             <AuditFieldValueStore>File</AuditFieldValueStore>
             <DoNotAddWhereKeywordToUserWhereClause>false</DoNotAddWhereKeywordToUserWhereClause>
-            <IncrementalReadStrategy>None</IncrementalReadStrategy>
             <PartitionKeyValues />
+            <IncrementalReadStrategy>None</IncrementalReadStrategy>
             <IncrementalTransferKeys />
             <IncrementalTransferFilePath>
               <Path />
@@ -857,7 +845,6 @@
               <DataModelEntityType>Dimension</DataModelEntityType>
               <DimensionType>General</DimensionType>
               <IsQueryable>true</IsQueryable>
-              <IsCdcEnabled>false</IsCdcEnabled>
               <IsUpdateable>true</IsUpdateable>
               <IsIntersect>false</IsIntersect>
               <ActionName>Cities</ActionName>
@@ -890,7 +877,6 @@
           <DataModelEntityType>Dimension</DataModelEntityType>
           <DimensionType>General</DimensionType>
           <IsQueryable>true</IsQueryable>
-          <IsCdcEnabled>false</IsCdcEnabled>
           <IsUpdateable>true</IsUpdateable>
           <IsIntersect>false</IsIntersect>
           <ActionName>Cities</ActionName>
@@ -948,21 +934,21 @@
   </Maps>
   <Relationships />
   <VisualInfo>
-    <UniqueId>fca8ba02-87cd-479d-961c-ddab055856f2</UniqueId>
+    <UniqueId>d51a1ac6-dd52-4170-a24c-a644a9c56b3a</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
-        <X>75</X>
-        <Y>32</Y>
+        <X>69</X>
+        <Y>42</Y>
       </Location>
       <Size>
-        <Width>606</Width>
-        <Height>251</Height>
+        <Width>612</Width>
+        <Height>382</Height>
       </Size>
-      <X>75</X>
-      <Y>32</Y>
-      <Width>606</Width>
-      <Height>251</Height>
+      <X>69</X>
+      <Y>42</Y>
+      <Width>612</Width>
+      <Height>382</Height>
     </DocumentBounds>
     <DocumentPosition>
       <X>0</X>
