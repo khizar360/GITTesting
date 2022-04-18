@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Git\DWBuilder_Team\DWA-Final Regression_Updated\DWA-Final Regression\CDCRegressions\SQLServer\CDCRegression-1\CDCReg.cprj</Name>
+  <Name>C:\RC9.1-Git\CDCRegression-1\CDCReg.cprj</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -53,11 +53,6 @@
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
         <Members>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>01_CityLoad01.Df</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
             <Name>03_CityLoad02.Df</Name>
             <ProjectType>Integration</ProjectType>
@@ -360,6 +355,11 @@
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFile">
+        <Name>Dataflow2.Df</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
       </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>
@@ -411,11 +411,6 @@
         <VcAction>None</VcAction>
         <Members>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>01_CityLoad01.Df</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
             <Name>03_CityLoad02.Df</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
@@ -717,6 +712,11 @@
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFile">
+        <Name>Dataflow2.Df</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
       </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>
