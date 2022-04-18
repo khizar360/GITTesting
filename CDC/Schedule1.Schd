@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NamedSchedule xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Name />
+  <Description>Schedule1</Description>
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <Schedule xsi:type="RunOnceSchedule" StartTime="2022-04-18T08:05:42.6961737-07:00">
+    <RangeStartHour>0</RangeStartHour>
+    <RangeEndHour>0</RangeEndHour>
+    <TypeName>Astera.Core.RunOnceSchedule</TypeName>
+    <TaskStarted>false</TaskStarted>
+  </Schedule>
+</NamedSchedule>
