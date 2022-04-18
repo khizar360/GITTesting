@@ -361,6 +361,39 @@
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
       </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>CityExcelFiles</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>01_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>02_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>03_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>04_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>05_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>
   </_TopFolder>
@@ -717,6 +750,39 @@
         <Name>Dataflow2.Df</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>CityExcelFiles</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>01_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>02_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>03_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>04_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>05_CityDimToExcel.Df</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
       </ProjectItem>
     </Members>
     <IsExpanded>false</IsExpanded>

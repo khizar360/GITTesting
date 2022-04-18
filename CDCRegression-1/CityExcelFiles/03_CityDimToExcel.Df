@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataflowDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProductVersion="9.0.0.317">
+  <IsFolder>false</IsFolder>
+  <Id>0</Id>
+  <IsNewRecord>false</IsNewRecord>
+  <Name>C:\Git\DWA-Final Regression_Updated\DWA-Final Regression\CDCRegressions\SQLServer\CDCRegression-1\00_CitiesDataflows\CityExcelFiles\03_CityDimToExcel.Df</Name>
+  <Description />
+  <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+  <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+  <AutoLayoutOnNextLoad>false</AutoLayoutOnNextLoad>
+  <Views />
+  <ExplicitAnchors />
+  <Actions>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>13dc9c3d-d96d-46aa-a2c1-4435395374d7</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>13dc9c3d-d96d-46aa-a2c1-4435395374d7</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>DatabaseSource</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>220</Height>
+            <Width>180</Width>
+            <X>63</X>
+            <Y>19</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <Name>DatabaseSource</Name>
+        <DoNotPushdown>false</DoNotPushdown>
+      </ActionProperties>
+      <DataflowItemDataSourceDatabase>
+        <Name>DatabaseSource</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <Layout xsi:type="DbLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>DatabaseSource</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Database</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="false" Header="CityID" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityID" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="CityID">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>c3135818-76bb-4280-8fa1-5354a092707d</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ScdFieldType>NotUsed</ScdFieldType>
+              <AggregateFunction>None</AggregateFunction>
+              <DataModelRole>Unknown</DataModelRole>
+              <FactFieldType>None</FactFieldType>
+              <IsQueryable>true</IsQueryable>
+              <IsCalculated>false</IsCalculated>
+              <IsFilterable>true</IsFilterable>
+              <IsExternalId>false</IsExternalId>
+              <IsCreateable>true</IsCreateable>
+              <IsCreateableDateDim>true</IsCreateableDateDim>
+              <IsCreateableTimeDim>true</IsCreateableTimeDim>
+              <IsUpdateable>true</IsUpdateable>
+              <IsForeignKey>false</IsForeignKey>
+              <IsDistributionKey>false</IsDistributionKey>
+              <IsSyncComparison>true</IsSyncComparison>
+              <CustomProperties />
+              <RelationshipId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </RelationshipId>
+              <PrimaryKeyFieldId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </PrimaryKeyFieldId>
+            </DbLayoutField>
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="50" DataType="String" IsPrimaryKey="false" Header="CityName" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityName" DbDataTypeName="NVARCHAR" DecimalLength="0" SurvivorValueType="New" CoreDbType="NVarChar" IsLengthAllowed="true" IsDecimalAllowed="false" IsLengthRequired="true" IsSystemGenerated="false" ColumnName="CityName">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>a04075d0-7fc3-4eb9-9aa7-3611174d65bd</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ScdFieldType>NotUsed</ScdFieldType>
+              <AggregateFunction>None</AggregateFunction>
+              <DataModelRole>Unknown</DataModelRole>
+              <FactFieldType>None</FactFieldType>
+              <IsQueryable>true</IsQueryable>
+              <IsCalculated>false</IsCalculated>
+              <IsFilterable>true</IsFilterable>
+              <IsExternalId>false</IsExternalId>
+              <IsCreateable>true</IsCreateable>
+              <IsCreateableDateDim>true</IsCreateableDateDim>
+              <IsCreateableTimeDim>true</IsCreateableTimeDim>
+              <IsUpdateable>true</IsUpdateable>
+              <IsForeignKey>false</IsForeignKey>
+              <IsDistributionKey>false</IsDistributionKey>
+              <IsSyncComparison>true</IsSyncComparison>
+              <CustomProperties />
+              <RelationshipId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </RelationshipId>
+              <PrimaryKeyFieldId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </PrimaryKeyFieldId>
+            </DbLayoutField>
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" Index="2" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="LatestRecordedPopulation">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>74dd410e-89fc-4e34-a62f-f491a9c9c40c</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ScdFieldType>NotUsed</ScdFieldType>
+              <AggregateFunction>None</AggregateFunction>
+              <DataModelRole>Unknown</DataModelRole>
+              <FactFieldType>None</FactFieldType>
+              <IsQueryable>true</IsQueryable>
+              <IsCalculated>false</IsCalculated>
+              <IsFilterable>true</IsFilterable>
+              <IsExternalId>false</IsExternalId>
+              <IsCreateable>true</IsCreateable>
+              <IsCreateableDateDim>true</IsCreateableDateDim>
+              <IsCreateableTimeDim>true</IsCreateableTimeDim>
+              <IsUpdateable>true</IsUpdateable>
+              <IsForeignKey>false</IsForeignKey>
+              <IsDistributionKey>false</IsDistributionKey>
+              <IsSyncComparison>true</IsSyncComparison>
+              <CustomProperties />
+              <RelationshipId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </RelationshipId>
+              <PrimaryKeyFieldId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </PrimaryKeyFieldId>
+            </DbLayoutField>
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="true" Header="CitiesKey" Index="3" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CitiesKey" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="CitiesKey">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>8bc6cf2c-5f27-46ce-8eac-56a47eca112e</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ScdFieldType>NotUsed</ScdFieldType>
+              <AggregateFunction>None</AggregateFunction>
+              <DataModelRole>Unknown</DataModelRole>
+              <FactFieldType>None</FactFieldType>
+              <IsQueryable>true</IsQueryable>
+              <IsCalculated>false</IsCalculated>
+              <IsFilterable>true</IsFilterable>
+              <IsExternalId>false</IsExternalId>
+              <IsCreateable>true</IsCreateable>
+              <IsCreateableDateDim>true</IsCreateableDateDim>
+              <IsCreateableTimeDim>true</IsCreateableTimeDim>
+              <IsUpdateable>true</IsUpdateable>
+              <IsForeignKey>false</IsForeignKey>
+              <IsDistributionKey>false</IsDistributionKey>
+              <IsSyncComparison>true</IsSyncComparison>
+              <CustomProperties />
+              <RelationshipId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </RelationshipId>
+              <PrimaryKeyFieldId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </PrimaryKeyFieldId>
+            </DbLayoutField>
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="3" DataType="Date" IsPrimaryKey="false" Header="EffectiveDate" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="EffectiveDate" DbDataTypeName="DATETIME" DecimalLength="0" SurvivorValueType="New" CoreDbType="DateTime" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="EffectiveDate">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>3bbd1f7e-b290-45a6-8431-0e5e22ad6c96</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ScdFieldType>NotUsed</ScdFieldType>
+              <AggregateFunction>None</AggregateFunction>
+              <DataModelRole>Unknown</DataModelRole>
+              <FactFieldType>None</FactFieldType>
+              <IsQueryable>true</IsQueryable>
+              <IsCalculated>false</IsCalculated>
+              <IsFilterable>true</IsFilterable>
+              <IsExternalId>false</IsExternalId>
+              <IsCreateable>true</IsCreateable>
+              <IsCreateableDateDim>true</IsCreateableDateDim>
+              <IsCreateableTimeDim>true</IsCreateableTimeDim>
+              <IsUpdateable>true</IsUpdateable>
+              <IsForeignKey>false</IsForeignKey>
+              <IsDistributionKey>false</IsDistributionKey>
+              <IsSyncComparison>true</IsSyncComparison>
+              <CustomProperties />
+              <RelationshipId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </RelationshipId>
+              <PrimaryKeyFieldId>
+                <Id>00000000-0000-0000-0000-000000000000</Id>
+              </PrimaryKeyFieldId>
+            </DbLayoutField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <DbInfo Port="1433" Protocol="http" AuthenticationType="SqlServerAuth" Policy="MBI_SSL" Partner="crm.dynamics.com" IsOnPremise="false" TNSNamesFilePath="" ConnectionTimeOut="15" CommandTimeOut="90" IsAccessWorkgroup="false" CreateNewTable="true" IsAccessExclusive="false" DataProvider="SqlServer" Server="VMQA401" Database="CDCRegDestination" Schema="" EncryptedUser="76A26DC57C9A1986286555D1009F8F23" EncryptedPassword="FD54880F06604C1D2CEDAB5B0E56E19A" TableName="Cities" TableSchema="Dimension" UseWindowsAuthentication="false" UseCurrentDatabase="false">
+            <IsReadOnly>false</IsReadOnly>
+            <providerFilter>
+              <DataProviderType>SqlServer</DataProviderType>
+            </providerFilter>
+            <UseSharedConnection>false</UseSharedConnection>
+            <SharedConnectionShareConnectionInstanceAmongDestinations>false</SharedConnectionShareConnectionInstanceAmongDestinations>
+            <SharedConnectionUseTransaction>false</SharedConnectionUseTransaction>
+            <UseS3ForStaging>false</UseS3ForStaging>
+            <StagingProvider>None</StagingProvider>
+            <SecurityToken />
+            <UseSandbox>false</UseSandbox>
+            <RetrieveDeleted>false</RetrieveDeleted>
+            <ResetCache>false</ResetCache>
+            <WebProxyUserId />
+            <WebProxyPassword />
+            <JobId>-1</JobId>
+            <RedirectUri>http://localhost:8050/</RedirectUri>
+            <OverrideDefaultOdbcDriverAttributes>false</OverrideDefaultOdbcDriverAttributes>
+            <OdbcConnectionInfoType>DSN</OdbcConnectionInfoType>
+          </DbInfo>
+          <LoadKeys />
+          <ForeignKeys />
+          <ReferencingForeignKeys>
+            <ForeignKey ConstraintName="FK_City_InvoiceLines" ParentAlias="FK_City_InvoiceLines">
+              <Name>FK_City_InvoiceLines</Name>
+              <IsCaseSensitive>false</IsCaseSensitive>
+              <ReferencedTable>
+                <Name>Cities</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Dimension</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>Cities</ActionName>
+              </ReferencedTable>
+              <Table>
+                <Name>InvoicesFact</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Fact</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>InvoicesFact</ActionName>
+              </Table>
+              <Columns>
+                <ForeignKeyColumn ForeignColumn="CustomerCity" PrimaryColumn="CitiesKey" />
+              </Columns>
+            </ForeignKey>
+            <ForeignKey ConstraintName="FK_City1_InvoiceLines1" ParentAlias="FK_City1_InvoiceLines1">
+              <Name>FK_City1_InvoiceLines1</Name>
+              <IsCaseSensitive>false</IsCaseSensitive>
+              <ReferencedTable>
+                <Name>Cities</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Dimension</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>Cities</ActionName>
+              </ReferencedTable>
+              <Table>
+                <Name>InvoicesFact</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Fact</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>InvoicesFact</ActionName>
+              </Table>
+              <Columns>
+                <ForeignKeyColumn ForeignColumn="CustomerBillToCity" PrimaryColumn="CitiesKey" />
+              </Columns>
+            </ForeignKey>
+            <ForeignKey ConstraintName="FK_City1_OrderLines1" ParentAlias="FK_City1_OrderLines1">
+              <Name>FK_City1_OrderLines1</Name>
+              <IsCaseSensitive>false</IsCaseSensitive>
+              <ReferencedTable>
+                <Name>Cities</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Dimension</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>Cities</ActionName>
+              </ReferencedTable>
+              <Table>
+                <Name>OrdersFact</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Fact</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>OrdersFact</ActionName>
+              </Table>
+              <Columns>
+                <ForeignKeyColumn ForeignColumn="CustomerBillToCityKey" PrimaryColumn="CitiesKey" />
+              </Columns>
+            </ForeignKey>
+            <ForeignKey ConstraintName="FK_City_OrderLines" ParentAlias="FK_City_OrderLines">
+              <Name>FK_City_OrderLines</Name>
+              <IsCaseSensitive>false</IsCaseSensitive>
+              <ReferencedTable>
+                <Name>Cities</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Dimension</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>Cities</ActionName>
+              </ReferencedTable>
+              <Table>
+                <Name>OrdersFact</Name>
+                <TableType>Table</TableType>
+                <ColumnarTableType>None</ColumnarTableType>
+                <Schema>Fact</Schema>
+                <DataModelEntityType>Unknown</DataModelEntityType>
+                <DimensionType>None</DimensionType>
+                <IsQueryable>true</IsQueryable>
+                <IsCdcEnabled>false</IsCdcEnabled>
+                <IsUpdateable>true</IsUpdateable>
+                <IsIntersect>false</IsIntersect>
+                <ActionName>OrdersFact</ActionName>
+              </Table>
+              <Columns>
+                <ForeignKeyColumn ForeignColumn="CustomerCityKey" PrimaryColumn="CitiesKey" />
+              </Columns>
+            </ForeignKey>
+          </ReferencingForeignKeys>
+          <DefaultReaderOptions EndRecord="0" StartRecord="0" PartitionTable="false" FavorLocalLayout="false" PartitionCount="1" PartitionKeyField="CityID" TrimStrings="true" ShowCollections="false">
+            <FilterRules />
+            <AuditFieldValueStore>File</AuditFieldValueStore>
+            <WhereClause />
+            <DoNotAddWhereKeywordToUserWhereClause>false</DoNotAddWhereKeywordToUserWhereClause>
+            <IncrementalReadStrategy>None</IncrementalReadStrategy>
+            <PartitionKeyValues />
+            <IncrementalTransferKeys />
+            <IncrementalTransferFilePath>
+              <Path />
+              <UncPath />
+            </IncrementalTransferFilePath>
+            <PerformFullLoad>false</PerformFullLoad>
+            <DeleteInDestinationIfDeletedFromSource>false</DeleteInDestinationIfDeletedFromSource>
+          </DefaultReaderOptions>
+          <DefaultWriterOptions UseParallelWrites="false" TransactionCommitAction="CommitAtEnd" UseTransactions="false" ParallelWriterCount="1" BulkCopyErrorAction="InsertIndividualRecords" BulkInsertBatchSize="10000" PreserveSystemGeneratedIds="false" RunGenerateStatistics="false" InsertOptions="BulkInsert" CheckFieldLengths="false" LogSQLLoaderErrors="false" FieldsWithNoMappingAction="DoNotModify" RecordDoesNotExistAction="Create" RecordExistsAction="Update" UpdateBatchSize="100" UseBatchedUpdate="true" RecordNotInSourceAction="Leave" SmartSyncBatchSize="1000" UseBulkInsert="true" CheckRecordExists="false">
+            <CheckDuplicateKeyValues>false</CheckDuplicateKeyValues>
+            <CheckForNulls>true</CheckForNulls>
+            <WriteNullStringAsEmptyString>false</WriteNullStringAsEmptyString>
+            <WriteNullNumericValuesAsZeros>false</WriteNullNumericValuesAsZeros>
+            <DoNotProcessRecordsWithErrors>false</DoNotProcessRecordsWithErrors>
+            <FilterRules />
+            <BulkLoadDataFormat>Delimited</BulkLoadDataFormat>
+            <IsolationLevel>Unspecified</IsolationLevel>
+            <MaxErrorCount>0</MaxErrorCount>
+            <KeyFields />
+            <TableInfo>
+              <Name>Cities</Name>
+              <TableType>Table</TableType>
+              <ColumnarTableType>None</ColumnarTableType>
+              <Schema>Dimension</Schema>
+              <DataModelEntityType>Unknown</DataModelEntityType>
+              <DimensionType>None</DimensionType>
+              <IsQueryable>true</IsQueryable>
+              <IsCdcEnabled>false</IsCdcEnabled>
+              <IsUpdateable>true</IsUpdateable>
+              <IsIntersect>false</IsIntersect>
+              <ActionName>Cities</ActionName>
+            </TableInfo>
+            <TruncateTable>false</TruncateTable>
+            <DisableIndexesDuringLoad>false</DisableIndexesDuringLoad>
+            <BulkCopyOptions>0</BulkCopyOptions>
+            <UseConstraintBasedWrite>false</UseConstraintBasedWrite>
+            <SQLLoaderBatchSize>300000</SQLLoaderBatchSize>
+            <DirectLoad>false</DirectLoad>
+            <TruncateToFit>false</TruncateToFit>
+            <UpdateConditionRules />
+            <WriteStrategy>AlwaysInsert</WriteStrategy>
+          </DefaultWriterOptions>
+          <PrimaryKey>
+            <string>CitiesKey</string>
+          </PrimaryKey>
+          <AllowsScd3AndScd6FieldRoles>true</AllowsScd3AndScd6FieldRoles>
+          <IsCaseSensitive>false</IsCaseSensitive>
+        </Layout>
+        <ContinueIterationOnError>false</ContinueIterationOnError>
+        <ActionRole>Normal</ActionRole>
+        <OutboundTransform>
+          <Transforms />
+        </OutboundTransform>
+        <IsDynamicLayout>false</IsDynamicLayout>
+        <DynamicLayoutOptions>
+          <DeleteFieldsInSubsequentObjects>true</DeleteFieldsInSubsequentObjects>
+          <AddFieldsInSubsequentObjects>true</AddFieldsInSubsequentObjects>
+        </DynamicLayoutOptions>
+        <CanPushdown>true</CanPushdown>
+        <SharingConnection>false</SharingConnection>
+        <CDCAuditFieldFile>
+          <Path />
+          <UncPath />
+        </CDCAuditFieldFile>
+        <PerformFullLoad>false</PerformFullLoad>
+        <PerformCDC>false</PerformCDC>
+        <DbInfo Port="1433" Protocol="http" AuthenticationType="SqlServerAuth" Policy="MBI_SSL" Partner="crm.dynamics.com" IsOnPremise="false" TNSNamesFilePath="" ConnectionTimeOut="15" CommandTimeOut="90" IsAccessWorkgroup="false" CreateNewTable="true" IsAccessExclusive="false" DataProvider="SqlServer" Server="VMQA401" Database="CDCRegDestination" Schema="" EncryptedUser="76A26DC57C9A1986286555D1009F8F23" EncryptedPassword="FD54880F06604C1D2CEDAB5B0E56E19A" TableName="Cities" TableSchema="Dimension" UseWindowsAuthentication="false" UseCurrentDatabase="false">
+          <IsReadOnly>false</IsReadOnly>
+          <providerFilter>
+            <DataProviderType>SqlServer</DataProviderType>
+          </providerFilter>
+          <UseSharedConnection>false</UseSharedConnection>
+          <SharedConnectionShareConnectionInstanceAmongDestinations>false</SharedConnectionShareConnectionInstanceAmongDestinations>
+          <SharedConnectionUseTransaction>false</SharedConnectionUseTransaction>
+          <UseS3ForStaging>false</UseS3ForStaging>
+          <StagingProvider>None</StagingProvider>
+          <SecurityToken />
+          <UseSandbox>false</UseSandbox>
+          <RetrieveDeleted>false</RetrieveDeleted>
+          <ResetCache>false</ResetCache>
+          <WebProxyUserId />
+          <WebProxyPassword />
+          <JobId>-1</JobId>
+          <RedirectUri>http://localhost:8050/</RedirectUri>
+          <OverrideDefaultOdbcDriverAttributes>false</OverrideDefaultOdbcDriverAttributes>
+          <OdbcConnectionInfoType>DSN</OdbcConnectionInfoType>
+        </DbInfo>
+      </DataflowItemDataSourceDatabase>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>6f85a49a-a67e-4a58-bb4e-e2d2ed83a4a9</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>6f85a49a-a67e-4a58-bb4e-e2d2ed83a4a9</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>ExcelDest</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>220</Height>
+            <Width>180</Width>
+            <X>665</X>
+            <Y>24</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <Name>ExcelDest</Name>
+        <DoNotPushdown>false</DoNotPushdown>
+      </ActionProperties>
+      <DataflowItemDataDestinationExcel>
+        <Name>ExcelDest</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <Layout xsi:type="ExcelLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>ExcelDest</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>ExcelSheet</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <ExcelLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="false" Header="CityID" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityID">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>c3135818-76bb-4280-8fa1-5354a092707d</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+            </ExcelLayoutField>
+            <ExcelLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="CityName" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityName">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>a04075d0-7fc3-4eb9-9aa7-3611174d65bd</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+            </ExcelLayoutField>
+            <ExcelLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" Index="2" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>74dd410e-89fc-4e34-a62f-f491a9c9c40c</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+            </ExcelLayoutField>
+            <ExcelLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="true" Header="CitiesKey" Index="3" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CitiesKey">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>8bc6cf2c-5f27-46ce-8eac-56a47eca112e</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+            </ExcelLayoutField>
+            <ExcelLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Date" IsPrimaryKey="false" Header="EffectiveDate" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="EffectiveDate">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>3bbd1f7e-b290-45a6-8431-0e5e22ad6c96</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+            </ExcelLayoutField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+          <DefaultReaderOptions EndRecord="0" StartRecord="0" BooleanFormatToUse="" CaseInsensitiveHeaderMatch="true" ColumnMatching="UseFieldSequence" DateFormatToUse="" Encoding="utf-8" HeaderRowCount="1" IgnoreExtraFields="true" IgnoreLastRow="false" IntegerFormatToUse="" MissingFieldsOK="false" NumberOfRecordsToReadForLayoutBuilding="5000" MakeAllFieldsAsStringInBuildLayout="false" PreparserFilterType="ProcessAll" RealFormatToUse="" SkipFirstNRecords="0" SkipNullRecords="true" TreatEmptyStringAsNull="true" TrimStrings="true" UseParallelReader="true" FirstRowContainsHeaders="true" AllowAlternateHeaders="false" FilePath="" PartitionFile="false" UseMemoryMappedFile="false" PartitionCount="1" ConsecutiveBlankRowsToMarkEOF="1">
+            <FilterRules />
+            <DeleteFileWhenDone>false</DeleteFileWhenDone>
+            <PreparserFilterRegularExpression />
+            <UseParallelStream>true</UseParallelStream>
+            <FilePathResolved>
+              <Path />
+              <UncPath />
+            </FilePathResolved>
+            <SkipFirstNBytes>0</SkipFirstNBytes>
+            <HierarchyDefinitionPath>
+              <Path />
+              <UncPath />
+            </HierarchyDefinitionPath>
+            <ProcessOnlyRecordsStartingWith />
+          </DefaultReaderOptions>
+          <DefaultWriterOptions Encoding="utf-8" MaintainOriginalSequenceForWriting="true" OmitBOM="false" FirstRowContainsHeaders="true" FilePath="c:\RegressionOutput\CDCRegressionOutputSQLServer\City_SqlSource\03_CityDim.xlsx" Append="false" NullText="" NumberOfRecordsToReadForLayoutBuilding="5000" Sheet="">
+            <CheckDuplicateKeyValues>false</CheckDuplicateKeyValues>
+            <CheckForNulls>true</CheckForNulls>
+            <WriteNullStringAsEmptyString>false</WriteNullStringAsEmptyString>
+            <WriteNullNumericValuesAsZeros>false</WriteNullNumericValuesAsZeros>
+            <DoNotProcessRecordsWithErrors>true</DoNotProcessRecordsWithErrors>
+            <FilterRules />
+            <WriteTraceEntries>true</WriteTraceEntries>
+            <FilePathResolved>
+              <Path>c:\RegressionOutput\CDCRegressionOutputSQLServer\City_SqlSource\03_CityDim.xlsx</Path>
+              <UncPath>c:\RegressionOutput\CDCRegressionOutputSQLServer\City_SqlSource\03_CityDim.xlsx</UncPath>
+            </FilePathResolved>
+          </DefaultWriterOptions>
+        </Layout>
+        <DoNotProcessRecordsWithErrors>true</DoNotProcessRecordsWithErrors>
+        <ClearIncomingRecordErrors>false</ClearIncomingRecordErrors>
+        <DoNotOverwriteDefaultsWithNullValues>false</DoNotOverwriteDefaultsWithNullValues>
+        <FilePath>c:\RegressionOutput\CDCRegressionOutputSQLServer\City_SqlSource\03_CityDim.xlsx</FilePath>
+        <WriteToMultipleFiles>false</WriteToMultipleFiles>
+        <Worksheet />
+        <SourceFieldPaths />
+        <UsesSourceFieldPaths>false</UsesSourceFieldPaths>
+        <ExportMode>false</ExportMode>
+        <FilterExpression />
+      </DataflowItemDataDestinationExcel>
+    </FlowDocumentItemAction>
+    <FlowDocumentItemAction>
+      <ActionProperties>
+        <UniqueId>768b1c72-0bf8-48b3-8fb3-7bd9b4acb872</UniqueId>
+        <DocumentItemData>
+          <SharingConnection>false</SharingConnection>
+          <ShareConnectionInstanceAmongDestinations>false</ShareConnectionInstanceAmongDestinations>
+        </DocumentItemData>
+        <ActionId>768b1c72-0bf8-48b3-8fb3-7bd9b4acb872</ActionId>
+        <SharedItemPath>
+          <Path />
+          <UncPath />
+        </SharedItemPath>
+        <ActionTemplateName>Sort</ActionTemplateName>
+        <NodeBounds>
+          <NormalBounds>
+            <Height>0</Height>
+            <Width>0</Width>
+            <X>369</X>
+            <Y>74</Y>
+            <IsExpanded>true</IsExpanded>
+            <IsSorted>false</IsSorted>
+          </NormalBounds>
+        </NodeBounds>
+        <IsSkip>false</IsSkip>
+        <IsHidden>false</IsHidden>
+        <SourceActionRole>Normal</SourceActionRole>
+        <Name>Sort</Name>
+        <DoNotPushdown>false</DoNotPushdown>
+      </ActionProperties>
+      <DataflowItemDataSort>
+        <Name>Sort</Name>
+        <IsShared>false</IsShared>
+        <AutoLog>false</AutoLog>
+        <Layout xsi:type="RecordLayout" IsHierarchicalFile="false">
+          <IsFolder>false</IsFolder>
+          <Id>0</Id>
+          <IsNewRecord>false</IsNewRecord>
+          <Name>Sort</Name>
+          <Description />
+          <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
+          <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
+          <IsSharedLayout>false</IsSharedLayout>
+          <LayoutBuildingOptions>
+            <RecordType>Record</RecordType>
+            <LayoutBuildingDefaultMode>SourceDefault</LayoutBuildingDefaultMode>
+            <LayoutBuildingProcess>Default</LayoutBuildingProcess>
+          </LayoutBuildingOptions>
+          <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
+          <Fields>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="false" Header="CityID" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityID">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>c3135818-76bb-4280-8fa1-5354a092707d</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+            </RecordField>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="String" IsPrimaryKey="false" Header="CityName" Index="1" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CityName">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>a04075d0-7fc3-4eb9-9aa7-3611174d65bd</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+            </RecordField>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="false" Header="LatestRecordedPopulation" Index="2" AllowsNull="true" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="LatestRecordedPopulation">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>74dd410e-89fc-4e34-a62f-f491a9c9c40c</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+            </RecordField>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Integer" IsPrimaryKey="true" Header="CitiesKey" Index="3" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="CitiesKey">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>8bc6cf2c-5f27-46ce-8eac-56a47eca112e</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+            </RecordField>
+            <RecordField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="0" DataType="Date" IsPrimaryKey="false" Header="EffectiveDate" Index="4" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" IsResponseVariable="false" TimeSeriesXReg="false" IsOrdinal="false" TimeSeriesNullTreatment="None" Name="EffectiveDate">
+              <FieldRoles>Input Output</FieldRoles>
+              <UniqueId>3bbd1f7e-b290-45a6-8431-0e5e22ad6c96</UniqueId>
+              <RegressionType>None</RegressionType>
+              <IsInput>true</IsInput>
+              <IsOutput>true</IsOutput>
+              <IsVariable>false</IsVariable>
+              <HasCollections>false</HasCollections>
+              <CompositeType>None</CompositeType>
+              <CompositeComponentType>None</CompositeComponentType>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <IsRequired>true</IsRequired>
+              <RestParameterRequired>false</RestParameterRequired>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+              <InheritedParameter>No</InheritedParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+            </RecordField>
+          </Fields>
+          <Children />
+          <Referenced />
+          <ValidationRules />
+        </Layout>
+        <ClearIncomingRecordErrors>false</ClearIncomingRecordErrors>
+        <DoNotOverwriteDefaultsWithNullValues>false</DoNotOverwriteDefaultsWithNullValues>
+        <SortKeys>
+          <SortKey>
+            <FieldName>CityID</FieldName>
+            <SortOrder>Ascending</SortOrder>
+          </SortKey>
+        </SortKeys>
+        <IsCaseSensitive>false</IsCaseSensitive>
+        <IsNullHighest>false</IsNullHighest>
+        <DistinctValuesOnly>false</DistinctValuesOnly>
+      </DataflowItemDataSort>
+    </FlowDocumentItemAction>
+  </Actions>
+  <Links />
+  <Maps>
+    <FlowDocumentItemMap>
+      <UniqueId>4f27eb83-66ce-4cdc-ac65-271a4e3fbbed</UniqueId>
+      <Start>DatabaseSource.CityID</Start>
+      <End>Sort.CityID</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>192ffd1b-b71f-4094-91cc-2697c7dec39d</UniqueId>
+      <Start>DatabaseSource.CityName</Start>
+      <End>Sort.CityName</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>de8f0b78-a465-4b20-9b88-b635903f0cf2</UniqueId>
+      <Start>DatabaseSource.LatestRecordedPopulation</Start>
+      <End>Sort.LatestRecordedPopulation</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>d65989c4-880f-43f8-9aeb-1a3c8f46b825</UniqueId>
+      <Start>DatabaseSource.CitiesKey</Start>
+      <End>Sort.CitiesKey</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>dfd186a5-cf50-4302-8d87-21adc8bccec2</UniqueId>
+      <Start>DatabaseSource.EffectiveDate</Start>
+      <End>Sort.EffectiveDate</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>5b356c32-6e6f-4019-a4a0-77e5cc2975f2</UniqueId>
+      <Start>Sort.CityID</Start>
+      <End>ExcelDest.CityID</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>a9a97d93-51d4-4db8-a65a-b05bae8477dd</UniqueId>
+      <Start>Sort.CityName</Start>
+      <End>ExcelDest.CityName</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>0d806c6b-df2c-4dd5-8b17-9f0613487c76</UniqueId>
+      <Start>Sort.LatestRecordedPopulation</Start>
+      <End>ExcelDest.LatestRecordedPopulation</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>634f9aa0-5ea9-490e-ad39-d3861512f505</UniqueId>
+      <Start>Sort.CitiesKey</Start>
+      <End>ExcelDest.CitiesKey</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+    <FlowDocumentItemMap>
+      <UniqueId>80108aab-f1d0-477f-873d-d429667cc924</UniqueId>
+      <Start>Sort.EffectiveDate</Start>
+      <End>ExcelDest.EffectiveDate</End>
+      <MapValueType>Value</MapValueType>
+      <MapLinkType>Data</MapLinkType>
+    </FlowDocumentItemMap>
+  </Maps>
+  <Relationships />
+  <VisualInfo>
+    <UniqueId>a4fa887e-687b-4e60-81b1-f4fb33fcf283</UniqueId>
+    <Actions />
+    <DocumentBounds>
+      <Location>
+        <X>63</X>
+        <Y>19</Y>
+      </Location>
+      <Size>
+        <Width>814</Width>
+        <Height>257</Height>
+      </Size>
+      <X>63</X>
+      <Y>19</Y>
+      <Width>814</Width>
+      <Height>257</Height>
+    </DocumentBounds>
+    <DocumentPosition>
+      <X>0</X>
+      <Y>0</Y>
+    </DocumentPosition>
+    <DocumentScale>1</DocumentScale>
+    <MappingMode>Data</MappingMode>
+    <UseMessages>false</UseMessages>
+    <IsSelected>false</IsSelected>
+    <UseOrthogonalLinks>false</UseOrthogonalLinks>
+  </VisualInfo>
+  <IsReadyForPreview>false</IsReadyForPreview>
+</DataflowDocument>
