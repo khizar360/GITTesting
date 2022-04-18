@@ -74,7 +74,7 @@
             <VcAction>None</VcAction>
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>02_CityUpdate01.Df</Name>
+            <Name>02_CityUpate01.Df</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -431,7 +431,7 @@
             <VcAction>None</VcAction>
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>02_CityUpdate01.Df</Name>
+            <Name>02_CityUpate01.Df</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
