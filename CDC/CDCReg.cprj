@@ -367,7 +367,7 @@
         <VcAction>None</VcAction>
       </ProjectItem>
       <ProjectItem xsi:type="ProjectItemFile">
-        <Name>Text File1.Txt</Name>
+        <Name>a.Txt</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
       </ProjectItem>
@@ -774,7 +774,7 @@
         <VcAction>None</VcAction>
       </ProjectItem>
       <ProjectItem xsi:type="ProjectItemFile">
-        <Name>Text File1.Txt</Name>
+        <Name>a.Txt</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
       </ProjectItem>
