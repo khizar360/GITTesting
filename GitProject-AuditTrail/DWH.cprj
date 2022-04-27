@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Git-Audit\DWBuilder_Team\GitProject-AuditTrail\DWH.cprj</Name>
+  <Name>C:\RC9.1-Git\GitProject-AuditTrail\DWH.cprj</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -19,239 +19,6 @@
         <Members>
           <ProjectItem xsi:type="ProjectItemFile">
             <Name>Parameters.cfg</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-        </Members>
-        <IsExpanded>false</IsExpanded>
-      </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFolder">
-        <Name>DataModels</Name>
-        <ProjectType>Integration</ProjectType>
-        <VcAction>None</VcAction>
-        <Members>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case01_FieldAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case02_FieldRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case03_FieldDBTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case04_FieldRenamed.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case05_FieldMadePrimaryKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case06_FieldMadeForeignKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case07_FieldSystemGenerated.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case08_FieldAllowNull.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case09_FieldDefaultValueAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case10_FieldLengthScaleChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case11_FieldAllChanges.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case12_EntitySchemaChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case13_EntityTableNameChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case14_EntityTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case15_EntityRenamed.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case16_EntityAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case17_EntityDeleted.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case18_EntityDimensionConfigured.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case19_EntityFactConfigured.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case20_EntityAllChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case21_IndexAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case22_IndexRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case23_IndexModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case24_EntityGeneralOptionsModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case25_RelationshipRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case26_DefaultvalueChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case27_FieldDescriptionAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case28_FieldDescriptionModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case29_ActiveInactiveValueModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case30_FactTransactionDateModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case31_DimensionSCDTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case32_DimensionSCD3XSCD6Configure.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case33_DimensionSCD3XSCD6RelatedModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case34_EntityDefinitionAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case35_EntityDefinitionModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case36_RelationshipMandatory.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case37_RelationshipTypeChange.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case38_SetCurrentRecord.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case39_SetEffectiveDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case40_SetExpiryDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case41_SetEffectiveExpiryDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case42_SetVersionNo.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case43_AddedDate&amp;TimeDims.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case44_SetSurrogateKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case45_SetBusinessKey.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -754,6 +521,247 @@
             <Name>Case45_SetBusinessKey.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Folder</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFolder">
+            <Name>DataModels</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <Members>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case01_FieldAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case02_FieldRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case03_FieldDBTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case04_FieldRenamed.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case05_FieldMadePrimaryKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case06_FieldMadeForeignKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case07_FieldSystemGenerated.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case08_FieldAllowNull.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case09_FieldDefaultValueAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case10_FieldLengthScaleChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case11_FieldAllChanges.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case12_EntitySchemaChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case13_EntityTableNameChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case14_EntityTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case15_EntityRenamed.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case16_EntityAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case17_EntityDeleted.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case18_EntityDimensionConfigured.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case19_EntityFactConfigured.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case20_EntityAllChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case21_IndexAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case22_IndexRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case23_IndexModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case24_EntityGeneralOptionsModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case25_RelationshipRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case26_DefaultvalueChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case27_FieldDescriptionAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case28_FieldDescriptionModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case29_ActiveInactiveValueModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case30_FactTransactionDateModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case31_DimensionSCDTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case32_DimensionSCD3XSCD6Configure.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case33_DimensionSCD3XSCD6RelatedModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case34_EntityDefinitionAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case35_EntityDefinitionModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case36_RelationshipMandatory.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case37_RelationshipTypeChange.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case38_SetCurrentRecord.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case39_SetEffectiveDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case40_SetExpiryDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case41_SetEffectiveExpiryDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case42_SetVersionNo.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case43_AddedDate&amp;TimeDims.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case44_SetSurrogateKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case45_SetBusinessKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+            </Members>
+            <IsExpanded>false</IsExpanded>
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
@@ -780,239 +788,6 @@
         <IsExpanded>false</IsExpanded>
       </ProjectItem>
       <ProjectItem xsi:type="ProjectItemFolder">
-        <Name>DataModels</Name>
-        <ProjectType>Integration</ProjectType>
-        <VcAction>None</VcAction>
-        <Members>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case01_FieldAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case02_FieldRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case03_FieldDBTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case04_FieldRenamed.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case05_FieldMadePrimaryKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case06_FieldMadeForeignKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case07_FieldSystemGenerated.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case08_FieldAllowNull.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case09_FieldDefaultValueAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case10_FieldLengthScaleChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case11_FieldAllChanges.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case12_EntitySchemaChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case13_EntityTableNameChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case14_EntityTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case15_EntityRenamed.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case16_EntityAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case17_EntityDeleted.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case18_EntityDimensionConfigured.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case19_EntityFactConfigured.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case20_EntityAllChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case21_IndexAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case22_IndexRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case23_IndexModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case24_EntityGeneralOptionsModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case25_RelationshipRemoved.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case26_DefaultvalueChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case27_FieldDescriptionAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case28_FieldDescriptionModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case29_ActiveInactiveValueModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case30_FactTransactionDateModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case31_DimensionSCDTypeChanged.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case32_DimensionSCD3XSCD6Configure.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case33_DimensionSCD3XSCD6RelatedModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case34_EntityDefinitionAdded.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case35_EntityDefinitionModified.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case36_RelationshipMandatory.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case37_RelationshipTypeChange.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case38_SetCurrentRecord.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case39_SetEffectiveDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case40_SetExpiryDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case41_SetEffectiveExpiryDate.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case42_SetVersionNo.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case43_AddedDate&amp;TimeDims.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case44_SetSurrogateKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-          <ProjectItem xsi:type="ProjectItemFile">
-            <Name>Case45_SetBusinessKey.mdl</Name>
-            <ProjectType>Integration</ProjectType>
-            <VcAction>None</VcAction>
-          </ProjectItem>
-        </Members>
-        <IsExpanded>false</IsExpanded>
-      </ProjectItem>
-      <ProjectItem xsi:type="ProjectItemFolder">
         <Name>Workflows</Name>
         <ProjectType>Integration</ProjectType>
         <VcAction>None</VcAction>
@@ -1508,6 +1283,247 @@
             <Name>Case45_SetBusinessKey.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
+          </ProjectItem>
+        </Members>
+        <IsExpanded>false</IsExpanded>
+      </ProjectItem>
+      <ProjectItem xsi:type="ProjectItemFolder">
+        <Name>Folder</Name>
+        <ProjectType>Integration</ProjectType>
+        <VcAction>None</VcAction>
+        <Members>
+          <ProjectItem xsi:type="ProjectItemFolder">
+            <Name>DataModels</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+            <Members>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case01_FieldAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case02_FieldRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case03_FieldDBTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case04_FieldRenamed.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case05_FieldMadePrimaryKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case06_FieldMadeForeignKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case07_FieldSystemGenerated.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case08_FieldAllowNull.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case09_FieldDefaultValueAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case10_FieldLengthScaleChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case11_FieldAllChanges.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case12_EntitySchemaChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case13_EntityTableNameChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case14_EntityTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case15_EntityRenamed.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case16_EntityAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case17_EntityDeleted.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case18_EntityDimensionConfigured.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case19_EntityFactConfigured.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case20_EntityAllChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case21_IndexAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case22_IndexRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case23_IndexModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case24_EntityGeneralOptionsModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case25_RelationshipRemoved.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case26_DefaultvalueChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case27_FieldDescriptionAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case28_FieldDescriptionModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case29_ActiveInactiveValueModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case30_FactTransactionDateModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case31_DimensionSCDTypeChanged.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case32_DimensionSCD3XSCD6Configure.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case33_DimensionSCD3XSCD6RelatedModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case34_EntityDefinitionAdded.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case35_EntityDefinitionModified.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case36_RelationshipMandatory.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case37_RelationshipTypeChange.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case38_SetCurrentRecord.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case39_SetEffectiveDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case40_SetExpiryDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case41_SetEffectiveExpiryDate.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case42_SetVersionNo.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case43_AddedDate&amp;TimeDims.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case44_SetSurrogateKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+              <ProjectItem xsi:type="ProjectItemFile">
+                <Name>Case45_SetBusinessKey.mdl</Name>
+                <ProjectType>Integration</ProjectType>
+                <VcAction>None</VcAction>
+              </ProjectItem>
+            </Members>
+            <IsExpanded>false</IsExpanded>
           </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
