@@ -997,6 +997,7 @@
               <ScdFieldType>ExpirationDate</ScdFieldType>
               <AggregateFunction>None</AggregateFunction>
               <DataModelRole>Unknown</DataModelRole>
+              <ActiveValue>1</ActiveValue>
               <FactFieldType>None</FactFieldType>
               <IsQueryable>true</IsQueryable>
               <IsCalculated>false</IsCalculated>
@@ -1009,7 +1010,9 @@
               <IsForeignKey>false</IsForeignKey>
               <IsDistributionKey>false</IsDistributionKey>
               <IsSyncComparison>true</IsSyncComparison>
-              <CustomProperties />
+              <CustomProperties>
+                <ActiveValue>1</ActiveValue>
+              </CustomProperties>
               <RelationshipId>
                 <Id>00000000-0000-0000-0000-000000000000</Id>
               </RelationshipId>
@@ -1206,97 +1209,67 @@
         <EntityType>Dimension</EntityType>
         <Relationships>
           <FlowDocumentItemRelationship>
-            <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
+            <UniqueId>9ff5a718-a06e-4ca4-a888-7ec951d71fc5</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Delivery_Date_Key</ChildElement>
+                <ParentElement>Customer_Key</ParentElement>
+                <ChildElement>Bill_To_Customer_Key</ChildElement>
                 <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                  <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
                 </ParentElementId>
                 <ChildElementId>
-                  <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
+                  <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
                 </ChildElementId>
               </FlowDocumentRelationshipElement>
             </Elements>
             <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
+            <ParentActionName>Customer</ParentActionName>
             <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension_Sales</ConstraintName>
-            <IsMandatory>false</IsMandatory>
+            <ConstraintName>FK_Fact_Sale_Bill_To_Customer</ConstraintName>
+            <IsMandatory>true</IsMandatory>
             <RelationshipType>Referenced</RelationshipType>
             <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension</ParentAlias>
+            <ParentAlias>Customer</ParentAlias>
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+              <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
           <FlowDocumentItemRelationship>
-            <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
+            <UniqueId>205e1379-1cd7-454a-b0f1-73847cd2bfd1</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Invoice_Date_Key</ChildElement>
+                <ParentElement>Customer_Key</ParentElement>
+                <ChildElement>Customer_Key</ChildElement>
                 <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                  <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
                 </ParentElementId>
                 <ChildElementId>
-                  <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
+                  <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
                 </ChildElementId>
               </FlowDocumentRelationshipElement>
             </Elements>
             <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
+            <ParentActionName>Customer</ParentActionName>
             <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
+            <ConstraintName>FK_Fact_Sale_Customer</ConstraintName>
             <IsMandatory>true</IsMandatory>
-            <RelationshipType>Parent</RelationshipType>
+            <RelationshipType>Referenced</RelationshipType>
             <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension1</ParentAlias>
+            <ParentAlias>Customer1</ParentAlias>
             <ChildAlias>Sale1</ChildAlias>
             <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+              <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
           <FlowDocumentItemRelationship>
-            <UniqueId>c4d9381d-f784-4638-b064-efbfcfbc1ab8</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>City_Key</ParentElement>
-                <ChildElement>City_Key</ChildElement>
-                <ParentElementId>
-                  <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>City</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_City_Dimension</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>City</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>2cf126c9-28e8-4382-868b-9c54157b367a</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>3fde7fef-294d-439d-b291-a0fe6267f481</UniqueId>
+            <UniqueId>c7a8d795-0ce5-4226-ab1e-11a33cfc3b0e</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
                 <ParentElement>Employee_Key</ParentElement>
@@ -1319,100 +1292,40 @@
             <ParentAlias>Employee</ParentAlias>
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
-              <Id>ef49a350-252a-4f24-b752-e83e7698df26</Id>
+              <Id>917cf1f1-5480-4869-a386-ff583bd06b30</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
           <FlowDocumentItemRelationship>
-            <UniqueId>0b049a74-7901-4c3f-b95c-e00a8e07b13a</UniqueId>
+            <UniqueId>b8fe205f-b68f-44bd-9b96-e2c974e43334</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
-                <ParentElement>Stock_Item_Key</ParentElement>
-                <ChildElement>Stock_Item_Key</ChildElement>
+                <ParentElement>City_Key</ParentElement>
+                <ChildElement>City_Key</ChildElement>
                 <ParentElementId>
-                  <Id>413a5af7-b8ce-457c-b4fa-d0ca909f913f</Id>
+                  <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
                 </ParentElementId>
                 <ChildElementId>
-                  <Id>f330d3fb-512a-44c3-aa54-b5638b05744d</Id>
+                  <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
                 </ChildElementId>
               </FlowDocumentRelationshipElement>
             </Elements>
             <ErrorType>NoError</ErrorType>
-            <ParentActionName>Stock_Item</ParentActionName>
+            <ParentActionName>City</ParentActionName>
             <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_Stock_Item_Key</ConstraintName>
+            <ConstraintName>FK_Fact_Sale_City_Dimension</ConstraintName>
             <IsMandatory>true</IsMandatory>
             <RelationshipType>Referenced</RelationshipType>
             <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>Stock_Item</ParentAlias>
+            <ParentAlias>City</ParentAlias>
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
-              <Id>70812bd1-533c-45b8-aae8-c1e882651cb2</Id>
+              <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>51f2e10b-cd4f-4f74-8312-30ed3381e8d2</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Customer_Key</ParentElement>
-                <ChildElement>Bill_To_Customer_Key</ChildElement>
-                <ParentElementId>
-                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>Customer</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_Bill_To_Customer</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>Customer</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>5d918686-8113-4c10-b02a-070a642166bd</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Customer_Key</ParentElement>
-                <ChildElement>Customer_Key</ChildElement>
-                <ParentElementId>
-                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>Customer</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_Customer</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>Customer1</ParentAlias>
-            <ChildAlias>Sale1</ChildAlias>
-            <ParentId>
-              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
         </Relationships>
@@ -1428,7 +1341,7 @@
             <EntityId>
               <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>Dimension</TableSchema>
             <TableName>Customer</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -2786,66 +2699,6 @@
   <Maps />
   <Relationships>
     <FlowDocumentItemRelationship>
-      <UniqueId>9ff5a718-a06e-4ca4-a888-7ec951d71fc5</UniqueId>
-      <Elements>
-        <FlowDocumentRelationshipElement>
-          <ParentElement>Customer_Key</ParentElement>
-          <ChildElement>Bill_To_Customer_Key</ChildElement>
-          <ParentElementId>
-            <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
-          </ParentElementId>
-          <ChildElementId>
-            <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
-          </ChildElementId>
-        </FlowDocumentRelationshipElement>
-      </Elements>
-      <ErrorType>NoError</ErrorType>
-      <ParentActionName>Customer</ParentActionName>
-      <ChildActionName>Sale</ChildActionName>
-      <ConstraintName>FK_Fact_Sale_Bill_To_Customer</ConstraintName>
-      <IsMandatory>true</IsMandatory>
-      <RelationshipType>Referenced</RelationshipType>
-      <Cardinality>OneToMany</Cardinality>
-      <ParentAlias>Customer</ParentAlias>
-      <ChildAlias>Sale</ChildAlias>
-      <ParentId>
-        <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
-      </ParentId>
-      <ChildId>
-        <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
-      </ChildId>
-    </FlowDocumentItemRelationship>
-    <FlowDocumentItemRelationship>
-      <UniqueId>205e1379-1cd7-454a-b0f1-73847cd2bfd1</UniqueId>
-      <Elements>
-        <FlowDocumentRelationshipElement>
-          <ParentElement>Customer_Key</ParentElement>
-          <ChildElement>Customer_Key</ChildElement>
-          <ParentElementId>
-            <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
-          </ParentElementId>
-          <ChildElementId>
-            <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
-          </ChildElementId>
-        </FlowDocumentRelationshipElement>
-      </Elements>
-      <ErrorType>NoError</ErrorType>
-      <ParentActionName>Customer</ParentActionName>
-      <ChildActionName>Sale</ChildActionName>
-      <ConstraintName>FK_Fact_Sale_Customer</ConstraintName>
-      <IsMandatory>true</IsMandatory>
-      <RelationshipType>Referenced</RelationshipType>
-      <Cardinality>OneToMany</Cardinality>
-      <ParentAlias>Customer1</ParentAlias>
-      <ChildAlias>Sale1</ChildAlias>
-      <ParentId>
-        <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
-      </ParentId>
-      <ChildId>
-        <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
-      </ChildId>
-    </FlowDocumentItemRelationship>
-    <FlowDocumentItemRelationship>
       <UniqueId>c7a8d795-0ce5-4226-ab1e-11a33cfc3b0e</UniqueId>
       <Elements>
         <FlowDocumentRelationshipElement>
@@ -2905,9 +2758,69 @@
         <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
       </ChildId>
     </FlowDocumentItemRelationship>
+    <FlowDocumentItemRelationship>
+      <UniqueId>9ff5a718-a06e-4ca4-a888-7ec951d71fc5</UniqueId>
+      <Elements>
+        <FlowDocumentRelationshipElement>
+          <ParentElement>Customer_Key</ParentElement>
+          <ChildElement>Bill_To_Customer_Key</ChildElement>
+          <ParentElementId>
+            <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+          </ParentElementId>
+          <ChildElementId>
+            <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
+          </ChildElementId>
+        </FlowDocumentRelationshipElement>
+      </Elements>
+      <ErrorType>NoError</ErrorType>
+      <ParentActionName>Customer</ParentActionName>
+      <ChildActionName>Sale</ChildActionName>
+      <ConstraintName>FK_Fact_Sale_Bill_To_Customer</ConstraintName>
+      <IsMandatory>true</IsMandatory>
+      <RelationshipType>Referenced</RelationshipType>
+      <Cardinality>OneToMany</Cardinality>
+      <ParentAlias>Customer</ParentAlias>
+      <ChildAlias>Sale</ChildAlias>
+      <ParentId>
+        <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
+      </ParentId>
+      <ChildId>
+        <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
+      </ChildId>
+    </FlowDocumentItemRelationship>
+    <FlowDocumentItemRelationship>
+      <UniqueId>205e1379-1cd7-454a-b0f1-73847cd2bfd1</UniqueId>
+      <Elements>
+        <FlowDocumentRelationshipElement>
+          <ParentElement>Customer_Key</ParentElement>
+          <ChildElement>Customer_Key</ChildElement>
+          <ParentElementId>
+            <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+          </ParentElementId>
+          <ChildElementId>
+            <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
+          </ChildElementId>
+        </FlowDocumentRelationshipElement>
+      </Elements>
+      <ErrorType>NoError</ErrorType>
+      <ParentActionName>Customer</ParentActionName>
+      <ChildActionName>Sale</ChildActionName>
+      <ConstraintName>FK_Fact_Sale_Customer</ConstraintName>
+      <IsMandatory>true</IsMandatory>
+      <RelationshipType>Referenced</RelationshipType>
+      <Cardinality>OneToMany</Cardinality>
+      <ParentAlias>Customer1</ParentAlias>
+      <ChildAlias>Sale1</ChildAlias>
+      <ParentId>
+        <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
+      </ParentId>
+      <ChildId>
+        <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
+      </ChildId>
+    </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>a435b9d2-07a5-421b-9c48-1e65b0fc84e2</UniqueId>
+    <UniqueId>7092ee69-adc2-4b6e-a000-29b305b5f393</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
@@ -2924,8 +2837,8 @@
       <Height>788.7528</Height>
     </DocumentBounds>
     <DocumentPosition>
-      <X>0</X>
-      <Y>0</Y>
+      <X>-0.6300163</X>
+      <Y>-128</Y>
     </DocumentPosition>
     <DocumentScale>1</DocumentScale>
     <MappingMode>Data</MappingMode>
