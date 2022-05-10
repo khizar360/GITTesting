@@ -724,7 +724,6 @@
         <IsResetCurrentRowIdentificationType>true</IsResetCurrentRowIdentificationType>
         <TableInfo>
           <Name>Sale</Name>
-          <Database>DW_Demo_InvoiceAndOrders</Database>
           <TableType>Table</TableType>
           <ColumnarTableType>None</ColumnarTableType>
           <Schema>Fact</Schema>
@@ -741,14 +740,13 @@
           <Index>
             <Name>PK_Fact_Sale</Name>
             <IncludeColumns />
-            <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
             <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>bb376309-4770-4c81-b3d6-dd1d2e9ceb65</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
-              <Id>e1d9986b-9583-4cd8-9b7e-d3652f335d12</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </EntityId>
             <TableSchema />
             <TableName>Sale</TableName>
@@ -1195,7 +1193,6 @@
         <IsResetCurrentRowIdentificationType>true</IsResetCurrentRowIdentificationType>
         <TableInfo>
           <Name>Customer</Name>
-          <Database>DW_Demo_InvoiceAndOrders</Database>
           <TableType>Table</TableType>
           <ColumnarTableType>None</ColumnarTableType>
           <Schema>Dimension</Schema>
@@ -1423,14 +1420,13 @@
           <Index>
             <Name>PK_Dimension_Customer</Name>
             <IncludeColumns />
-            <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
             <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>fcf7c78e-0b8b-4d70-89c5-18412040abb5</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
-              <Id>c19f9c4a-8e94-4b2e-8119-5de69085e8c1</Id>
+              <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </EntityId>
             <TableSchema />
             <TableName>Customer</TableName>
@@ -1970,7 +1966,6 @@
         <IsResetCurrentRowIdentificationType>true</IsResetCurrentRowIdentificationType>
         <TableInfo>
           <Name>Employee</Name>
-          <Database>DW_Demo_InvoiceAndOrders</Database>
           <TableType>Table</TableType>
           <ColumnarTableType>None</ColumnarTableType>
           <Schema>Dimension</Schema>
@@ -2198,14 +2193,13 @@
           <Index>
             <Name>PK_Dimension_Employee</Name>
             <IncludeColumns />
-            <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
             <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>8f78b8f3-636d-48b0-97ad-ed6b1a42d622</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
-              <Id>767da6e1-f7f4-4e2f-b3e8-38a0a31e8560</Id>
+              <Id>917cf1f1-5480-4869-a386-ff583bd06b30</Id>
             </EntityId>
             <TableSchema />
             <TableName>Employee</TableName>
@@ -2686,7 +2680,6 @@
         <IsResetCurrentRowIdentificationType>true</IsResetCurrentRowIdentificationType>
         <TableInfo>
           <Name>City</Name>
-          <Database>DW_Demo_InvoiceAndOrders</Database>
           <TableType>Table</TableType>
           <ColumnarTableType>None</ColumnarTableType>
           <Schema>Dimension</Schema>
@@ -2914,14 +2907,13 @@
           <Index>
             <Name>PK_Dimension_City</Name>
             <IncludeColumns />
-            <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
             <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>21b6f1d4-56fd-4777-9c4e-1eaa3ee01198</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
-              <Id>ca7e9655-7b80-4719-8bbf-9f1ced8b4ff2</Id>
+              <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
             </EntityId>
             <TableSchema />
             <TableName>City</TableName>
@@ -3095,7 +3087,7 @@
     </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>6e49d3a3-f9b8-4dcc-9cdc-0ad352f26e91</UniqueId>
+    <UniqueId>f989c409-67d5-43d4-8de9-8977c92c2528</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
