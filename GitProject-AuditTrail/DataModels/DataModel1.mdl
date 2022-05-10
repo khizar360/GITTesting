@@ -852,7 +852,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="Customer Key" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Customer_Key" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="Customer Key">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="Customer Key" Description="abc" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Customer_Key" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="Customer Key">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>04494363-a713-4a66-a096-f81c4d7ea620</UniqueId>
               <RegressionType>None</RegressionType>
@@ -2024,7 +2024,7 @@
             <EntityId>
               <Id>917cf1f1-5480-4869-a386-ff583bd06b30</Id>
             </EntityId>
-            <TableSchema>Dimension</TableSchema>
+            <TableSchema />
             <TableName>Employee</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -2648,7 +2648,7 @@
             <EntityId>
               <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
             </EntityId>
-            <TableSchema>Dimension</TableSchema>
+            <TableSchema />
             <TableName>City</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -2820,7 +2820,7 @@
     </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>da744d6a-7c51-4ee3-b0e8-25156c6304cd</UniqueId>
+    <UniqueId>82cc4e0a-85ac-44e6-8e06-78a2049bf0f3</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
