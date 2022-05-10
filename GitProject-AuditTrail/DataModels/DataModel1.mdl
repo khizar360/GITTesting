@@ -2045,7 +2045,7 @@
                 <ParentElement>Employee_Key</ParentElement>
                 <ChildElement>Salesperson_Key</ChildElement>
                 <ParentElementId>
-                  <Id>917cf1f1-5480-4869-a386-ff583bd06b30</Id>
+                  <Id>d01f751a-b350-43e9-a220-b333f9c1f90a</Id>
                 </ParentElementId>
                 <ChildElementId>
                   <Id>4d85849c-98a1-4242-b3d0-86b8011d768f</Id>
@@ -2075,7 +2075,7 @@
                 <ParentElement>City_Key</ParentElement>
                 <ChildElement>City_Key</ChildElement>
                 <ParentElementId>
-                  <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
+                  <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
                 </ParentElementId>
                 <ChildElementId>
                   <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
@@ -2206,7 +2206,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="City Key" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="City_Key" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="City Key">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="10" DataType="Integer" IsPrimaryKey="true" Header="City Key" Description="abc" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="City_Key" DbDataTypeName="INT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int32" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="true" ColumnName="City Key">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>8613e360-73b6-491d-990c-0474bd8dd7f4</UniqueId>
               <RegressionType>None</RegressionType>
@@ -2603,133 +2603,13 @@
         <EntityType>Dimension</EntityType>
         <Relationships>
           <FlowDocumentItemRelationship>
-            <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Delivery_Date_Key</ChildElement>
-                <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension_Sales</ConstraintName>
-            <IsMandatory>false</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Invoice_Date_Key</ChildElement>
-                <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Parent</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension1</ParentAlias>
-            <ChildAlias>Sale1</ChildAlias>
-            <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>c4d9381d-f784-4638-b064-efbfcfbc1ab8</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>City_Key</ParentElement>
-                <ChildElement>City_Key</ChildElement>
-                <ParentElementId>
-                  <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>City</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_City_Dimension</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>City</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>2cf126c9-28e8-4382-868b-9c54157b367a</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>0b049a74-7901-4c3f-b95c-e00a8e07b13a</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Stock_Item_Key</ParentElement>
-                <ChildElement>Stock_Item_Key</ChildElement>
-                <ParentElementId>
-                  <Id>413a5af7-b8ce-457c-b4fa-d0ca909f913f</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>f330d3fb-512a-44c3-aa54-b5638b05744d</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>Stock_Item</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_Fact_Sale_Stock_Item_Key</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>Stock_Item</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>70812bd1-533c-45b8-aae8-c1e882651cb2</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>51f2e10b-cd4f-4f74-8312-30ed3381e8d2</UniqueId>
+            <UniqueId>9ff5a718-a06e-4ca4-a888-7ec951d71fc5</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
                 <ParentElement>Customer_Key</ParentElement>
                 <ChildElement>Bill_To_Customer_Key</ChildElement>
                 <ParentElementId>
-                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+                  <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
                 </ParentElementId>
                 <ChildElementId>
                   <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
@@ -2746,20 +2626,20 @@
             <ParentAlias>Customer</ParentAlias>
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
-              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
+              <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
           <FlowDocumentItemRelationship>
-            <UniqueId>5d918686-8113-4c10-b02a-070a642166bd</UniqueId>
+            <UniqueId>205e1379-1cd7-454a-b0f1-73847cd2bfd1</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
                 <ParentElement>Customer_Key</ParentElement>
                 <ChildElement>Customer_Key</ChildElement>
                 <ParentElementId>
-                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+                  <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
                 </ParentElementId>
                 <ChildElementId>
                   <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
@@ -2776,14 +2656,44 @@
             <ParentAlias>Customer1</ParentAlias>
             <ChildAlias>Sale1</ChildAlias>
             <ParentId>
-              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
+              <Id>2723d82d-382d-4fc0-b1b6-698156e75c21</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
           <FlowDocumentItemRelationship>
-            <UniqueId>3fde7fef-294d-439d-b291-a0fe6267f481</UniqueId>
+            <UniqueId>b8fe205f-b68f-44bd-9b96-e2c974e43334</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>City_Key</ParentElement>
+                <ChildElement>City_Key</ChildElement>
+                <ParentElementId>
+                  <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>City</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_City_Dimension</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>City</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
+            </ParentId>
+            <ChildId>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>c7a8d795-0ce5-4226-ab1e-11a33cfc3b0e</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
                 <ParentElement>Employee_Key</ParentElement>
@@ -2806,10 +2716,10 @@
             <ParentAlias>Employee</ParentAlias>
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
-              <Id>ef49a350-252a-4f24-b752-e83e7698df26</Id>
+              <Id>917cf1f1-5480-4869-a386-ff583bd06b30</Id>
             </ParentId>
             <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+              <Id>f1aa6b0e-d4ec-4152-bdbd-66f53b72eeb7</Id>
             </ChildId>
           </FlowDocumentItemRelationship>
         </Relationships>
@@ -2825,7 +2735,7 @@
             <EntityId>
               <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>Dimension</TableSchema>
             <TableName>City</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -2942,7 +2852,7 @@
           <ParentElement>City_Key</ParentElement>
           <ChildElement>City_Key</ChildElement>
           <ParentElementId>
-            <Id>b9c4b645-5464-4b35-b7ff-379af262feec</Id>
+            <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
           </ParentElementId>
           <ChildElementId>
             <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
@@ -2997,7 +2907,7 @@
     </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>18ffa1ff-cf0a-41f3-a81e-9969fbfe26d3</UniqueId>
+    <UniqueId>3593c47a-2908-4ba7-ba42-36572d7c516b</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
