@@ -3,7 +3,7 @@
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\Git-Audit\DWBuilder_Team\GitProject-AuditTrail\DWH.cprj</Name>
+  <Name>C:\Git-GitHub\GitProject-AuditTrail\DWH.cprj</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -252,6 +252,11 @@
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
             <Name>Case45_SetBusinessKey.mdl</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataModel1.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -1006,6 +1011,11 @@
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
             <Name>Case45_SetBusinessKey.mdl</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataModel1.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
