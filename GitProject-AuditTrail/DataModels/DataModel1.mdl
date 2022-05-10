@@ -997,7 +997,7 @@
               <ScdFieldType>ExpirationDate</ScdFieldType>
               <AggregateFunction>None</AggregateFunction>
               <DataModelRole>Unknown</DataModelRole>
-              <ActiveValue>0</ActiveValue>
+              <ActiveValue />
               <FactFieldType>None</FactFieldType>
               <IsQueryable>true</IsQueryable>
               <IsCalculated>false</IsCalculated>
@@ -1011,7 +1011,7 @@
               <IsDistributionKey>false</IsDistributionKey>
               <IsSyncComparison>true</IsSyncComparison>
               <CustomProperties>
-                <ActiveValue>0</ActiveValue>
+                <ActiveValue />
               </CustomProperties>
               <RelationshipId>
                 <Id>00000000-0000-0000-0000-000000000000</Id>
@@ -2820,7 +2820,7 @@
     </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>2bea545f-47c1-46f4-b7ef-ef8dea39e492</UniqueId>
+    <UniqueId>da744d6a-7c51-4ee3-b0e8-25156c6304cd</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
