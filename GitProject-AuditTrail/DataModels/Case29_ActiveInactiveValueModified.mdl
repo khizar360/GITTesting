@@ -60,7 +60,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="true" Header="Key" Description="edwe" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Key" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="Key">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="true" Header="Key" Description="" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Key" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="Key">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>879d0d31-6979-4a2e-9b5f-59138f088d3c</UniqueId>
               <RegressionType>None</RegressionType>
@@ -1570,66 +1570,6 @@
         <EntityType>General</EntityType>
         <Relationships>
           <FlowDocumentItemRelationship>
-            <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Delivery_Date_Key</ChildElement>
-                <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension_Sales</ConstraintName>
-            <IsMandatory>false</IsMandatory>
-            <RelationshipType>Referenced</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension</ParentAlias>
-            <ChildAlias>Sale</ChildAlias>
-            <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
-            <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
-            <Elements>
-              <FlowDocumentRelationshipElement>
-                <ParentElement>Key</ParentElement>
-                <ChildElement>Invoice_Date_Key</ChildElement>
-                <ParentElementId>
-                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-                </ParentElementId>
-                <ChildElementId>
-                  <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
-                </ChildElementId>
-              </FlowDocumentRelationshipElement>
-            </Elements>
-            <ErrorType>NoError</ErrorType>
-            <ParentActionName>DateDimension</ParentActionName>
-            <ChildActionName>Sale</ChildActionName>
-            <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
-            <IsMandatory>true</IsMandatory>
-            <RelationshipType>Parent</RelationshipType>
-            <Cardinality>OneToMany</Cardinality>
-            <ParentAlias>DateDimension1</ParentAlias>
-            <ChildAlias>Sale1</ChildAlias>
-            <ParentId>
-              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-            </ParentId>
-            <ChildId>
-              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-            </ChildId>
-          </FlowDocumentItemRelationship>
-          <FlowDocumentItemRelationship>
             <UniqueId>51f2e10b-cd4f-4f74-8312-30ed3381e8d2</UniqueId>
             <Elements>
               <FlowDocumentRelationshipElement>
@@ -1774,6 +1714,66 @@
             <ChildAlias>Sale</ChildAlias>
             <ParentId>
               <Id>2cf126c9-28e8-4382-868b-9c54157b367a</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Key</ParentElement>
+                <ChildElement>Delivery_Date_Key</ChildElement>
+                <ParentElementId>
+                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>DateDimension</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_DateDimension_Sales</ConstraintName>
+            <IsMandatory>false</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>DateDimension</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Key</ParentElement>
+                <ChildElement>Invoice_Date_Key</ChildElement>
+                <ParentElementId>
+                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>DateDimension</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Parent</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>DateDimension1</ParentAlias>
+            <ChildAlias>Sale1</ChildAlias>
+            <ParentId>
+              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </ParentId>
             <ChildId>
               <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
@@ -6188,7 +6188,7 @@
     </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>3ba87691-b12f-4256-9a10-f78a9530574f</UniqueId>
+    <UniqueId>10d217d9-722b-4bd4-8a75-b687d3d33912</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
