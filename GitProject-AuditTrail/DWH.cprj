@@ -260,6 +260,11 @@
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataModel1.mdl</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
         </Members>
         <IsExpanded>false</IsExpanded>
       </ProjectItem>
@@ -1016,6 +1021,11 @@
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
             <Name>Copy of DataModel1.mdl</Name>
+            <ProjectType>Integration</ProjectType>
+            <VcAction>None</VcAction>
+          </ProjectItem>
+          <ProjectItem xsi:type="ProjectItemFile">
+            <Name>DataModel1.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
