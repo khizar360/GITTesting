@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DataModelDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ProductVersion="9.1.1.194">
+<DataModelDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ProductVersion="9.1.1.227">
   <IsFolder>false</IsFolder>
   <Id>0</Id>
   <IsNewRecord>false</IsNewRecord>
-  <Name>C:\AuditTrailDemo\GitProject-AuditTrail\Unmodified\Case29_ActiveInactiveValueModified.mdl</Name>
+  <Name>C:\Git-GitHub\GitProject-AuditTrail\DataModels\Case29_ActiveInactiveValueModified.mdl</Name>
   <Description />
   <CreateDtTm>0001-01-01T00:00:00</CreateDtTm>
   <UpdateDtTm>0001-01-01T00:00:00</UpdateDtTm>
@@ -60,7 +60,7 @@
           </LayoutBuildingOptions>
           <SuppressLayoutBuilding>false</SuppressLayoutBuilding>
           <Fields>
-            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="true" Header="Key" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Key" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="Key">
+            <DbLayoutField MaxFieldLengthInLayoutBuilding="-1" MaxNumericValueInLayoutBuilding="0" MaxDecimalPlacesInLayoutBuilding="0" Length="19" DataType="Integer" IsPrimaryKey="true" Header="Key" Description="edwe" Index="0" AllowsNull="false" IsDependent="false" IsCategorical="false" IsTimeVariable="false" TimeSeriesNullTreatment="None" Name="Key" DbDataTypeName="BIGINT" DecimalLength="0" SurvivorValueType="New" CoreDbType="Int64" IsLengthAllowed="false" IsDecimalAllowed="false" IsLengthRequired="false" IsSystemGenerated="false" ColumnName="Key">
               <FieldRoles>Input Output</FieldRoles>
               <UniqueId>879d0d31-6979-4a2e-9b5f-59138f088d3c</UniqueId>
               <RegressionType>None</RegressionType>
@@ -1568,21 +1568,232 @@
           <ActionName>DateDimension</ActionName>
         </TableInfo>
         <EntityType>General</EntityType>
-        <Relationships />
+        <Relationships>
+          <FlowDocumentItemRelationship>
+            <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Key</ParentElement>
+                <ChildElement>Delivery_Date_Key</ChildElement>
+                <ParentElementId>
+                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>DateDimension</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_DateDimension_Sales</ConstraintName>
+            <IsMandatory>false</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>DateDimension</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Key</ParentElement>
+                <ChildElement>Invoice_Date_Key</ChildElement>
+                <ParentElementId>
+                  <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>DateDimension</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Parent</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>DateDimension1</ParentAlias>
+            <ChildAlias>Sale1</ChildAlias>
+            <ParentId>
+              <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>51f2e10b-cd4f-4f74-8312-30ed3381e8d2</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Customer_Key</ParentElement>
+                <ChildElement>Bill_To_Customer_Key</ChildElement>
+                <ParentElementId>
+                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>f1dc8e3c-42ef-4cbd-82dd-940cb11f0e25</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>Customer</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_Bill_To_Customer</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>Customer</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>5d918686-8113-4c10-b02a-070a642166bd</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Customer_Key</ParentElement>
+                <ChildElement>Customer_Key</ChildElement>
+                <ParentElementId>
+                  <Id>04494363-a713-4a66-a096-f81c4d7ea620</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>5b41cbea-31df-4471-9177-efab99bb719c</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>Customer</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_Customer</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>Customer1</ParentAlias>
+            <ChildAlias>Sale1</ChildAlias>
+            <ParentId>
+              <Id>d785bdaf-1469-4958-81ba-f9a15206b2d6</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>3fde7fef-294d-439d-b291-a0fe6267f481</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Employee_Key</ParentElement>
+                <ChildElement>Salesperson_Key</ChildElement>
+                <ParentElementId>
+                  <Id>d01f751a-b350-43e9-a220-b333f9c1f90a</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>4d85849c-98a1-4242-b3d0-86b8011d768f</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>Employee</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_Salesperson</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>Employee</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>ef49a350-252a-4f24-b752-e83e7698df26</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>0b049a74-7901-4c3f-b95c-e00a8e07b13a</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>Stock_Item_Key</ParentElement>
+                <ChildElement>Stock_Item_Key</ChildElement>
+                <ParentElementId>
+                  <Id>413a5af7-b8ce-457c-b4fa-d0ca909f913f</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>f330d3fb-512a-44c3-aa54-b5638b05744d</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>Stock_Item</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_Stock_Item_Key</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>Stock_Item</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>70812bd1-533c-45b8-aae8-c1e882651cb2</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+          <FlowDocumentItemRelationship>
+            <UniqueId>c4d9381d-f784-4638-b064-efbfcfbc1ab8</UniqueId>
+            <Elements>
+              <FlowDocumentRelationshipElement>
+                <ParentElement>City_Key</ParentElement>
+                <ChildElement>City_Key</ChildElement>
+                <ParentElementId>
+                  <Id>8613e360-73b6-491d-990c-0474bd8dd7f4</Id>
+                </ParentElementId>
+                <ChildElementId>
+                  <Id>bc9b1668-4bf5-4670-a612-f77817ee53f6</Id>
+                </ChildElementId>
+              </FlowDocumentRelationshipElement>
+            </Elements>
+            <ErrorType>NoError</ErrorType>
+            <ParentActionName>City</ParentActionName>
+            <ChildActionName>Sale</ChildActionName>
+            <ConstraintName>FK_Fact_Sale_City_Dimension</ConstraintName>
+            <IsMandatory>true</IsMandatory>
+            <RelationshipType>Referenced</RelationshipType>
+            <Cardinality>OneToMany</Cardinality>
+            <ParentAlias>City</ParentAlias>
+            <ChildAlias>Sale</ChildAlias>
+            <ParentId>
+              <Id>2cf126c9-28e8-4382-868b-9c54157b367a</Id>
+            </ParentId>
+            <ChildId>
+              <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+            </ChildId>
+          </FlowDocumentItemRelationship>
+        </Relationships>
         <Indexes>
           <Index>
             <Name>IDX_DateDimension_Date</Name>
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>8551fcf6-d37e-4eb9-8ffd-06d09f164b0d</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1594,6 +1805,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>Date</ElementName>
                 <Name>Date</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1607,14 +1819,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>402a1449-eab5-45e7-8f80-7f98526eb385</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1626,6 +1838,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DayName</ElementName>
                 <Name>DayName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1639,14 +1852,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>bc721391-ed25-4912-a3c7-b35dfbab9e94</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1658,6 +1871,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DayOfMonth</ElementName>
                 <Name>DayOfMonth</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1671,14 +1885,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>e59464c5-c5fe-422d-8e89-f14449ffdca4</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1690,6 +1904,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DayOfQuarter</ElementName>
                 <Name>DayOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1703,14 +1918,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>81adff53-4939-4db9-af20-c3631e39da0b</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1722,6 +1937,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DayOfWeek</ElementName>
                 <Name>DayOfWeek</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1735,14 +1951,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>a80bf49e-655a-44ca-93f6-371dda3b36d9</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1754,6 +1970,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DayOfYear</ElementName>
                 <Name>DayOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1767,14 +1984,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>4d154cbd-521b-4147-a44e-2543bdeb791c</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1786,6 +2003,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>DaySuffix</ElementName>
                 <Name>DaySuffix</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1799,14 +2017,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>29740789-09d2-449c-81b0-031509236257</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1818,6 +2036,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FirstDayOfMonth</ElementName>
                 <Name>FirstDayOfMonth</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1831,14 +2050,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>be4e474a-2f5d-4b8d-87eb-90fe782563f0</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1850,6 +2069,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FirstDayOfQuarter</ElementName>
                 <Name>FirstDayOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1863,14 +2083,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>ad25e5ff-1910-4fa8-b8b6-87cd0137307e</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1882,6 +2102,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FirstDayOfYear</ElementName>
                 <Name>FirstDayOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1895,14 +2116,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>6f46d850-2aa8-4eff-b03d-4a28c37aaade</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1914,6 +2135,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalDayOfQuarter</ElementName>
                 <Name>FiscalDayOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1927,14 +2149,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>8638b391-a010-4229-a60d-fbcaa1ad5964</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1946,6 +2168,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalDayOfYear</ElementName>
                 <Name>FiscalDayOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1959,14 +2182,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>889b54bb-19fc-4f21-938e-9bf33ea23d7e</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -1978,6 +2201,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalFirstDayOfQuarter</ElementName>
                 <Name>FiscalFirstDayOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -1991,14 +2215,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>a857b9da-e532-4417-9032-ad6ceaa85eaf</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2010,6 +2234,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalFirstDayOfYear</ElementName>
                 <Name>FiscalFirstDayOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2023,14 +2248,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>42b4eea0-849a-496c-98f1-fea066d36bb9</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2042,6 +2267,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalMonth</ElementName>
                 <Name>FiscalMonth</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2055,14 +2281,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>e8244e1a-e92b-4dd6-81a7-372a9c18f389</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2074,6 +2300,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalMonthOfQuarter</ElementName>
                 <Name>FiscalMonthOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2087,14 +2314,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>78953832-4914-4cef-857b-119af92df070</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2106,6 +2333,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalQuarter</ElementName>
                 <Name>FiscalQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2119,14 +2347,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>4315aef1-b9c8-496b-824d-9edec2f96cdb</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2138,6 +2366,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalWeekOfQuarter</ElementName>
                 <Name>FiscalWeekOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2151,14 +2380,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>45a1c2ee-2a3d-4722-9984-0f83ffa4038d</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2170,6 +2399,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalWeekOfYear</ElementName>
                 <Name>FiscalWeekOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2183,14 +2413,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>6faefb32-316e-4d83-904a-ffacd8e5aab0</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2202,6 +2432,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FiscalYearName</ElementName>
                 <Name>FiscalYearName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2215,14 +2446,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>13e93489-7a05-4ef3-a901-a7b7451c44ce</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2234,6 +2465,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>FullDateUSA</ElementName>
                 <Name>FullDateUSA</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2247,14 +2479,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>d74e6efc-d18e-4049-a28f-01215e25e224</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2266,6 +2498,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>HolidayName</ElementName>
                 <Name>HolidayName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2279,14 +2512,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>6fe769b9-2a64-46fa-9919-ac5ad5f88dfd</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2298,6 +2531,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>IsHoliday</ElementName>
                 <Name>IsHoliday</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2311,14 +2545,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>bb8a4f10-add5-40d8-93e0-56019bf89805</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2330,6 +2564,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>IsLeapYear</ElementName>
                 <Name>IsLeapYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2343,14 +2578,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>ca2f4901-e901-4ef4-a473-765a2218c665</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2362,6 +2597,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>IsWeekday</ElementName>
                 <Name>IsWeekday</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2375,14 +2611,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>be98ac4b-f2a8-4cd3-bece-d71bb8b59007</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2394,6 +2630,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>MMYYYY</ElementName>
                 <Name>MMYYYY</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2407,14 +2644,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>4f79c560-4f46-4812-8167-b06c381c0984</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2426,6 +2663,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>Month</ElementName>
                 <Name>Month</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2439,14 +2677,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>202366c7-e3b9-4783-9138-17a14fa62eec</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2458,6 +2696,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>MonthName</ElementName>
                 <Name>MonthName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2471,14 +2710,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>87184f22-0f9d-4e8a-a338-a2abfe146f05</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2490,6 +2729,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>MonthOfQuarter</ElementName>
                 <Name>MonthOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2503,14 +2743,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>9effc33a-80db-46d6-8ddc-eec21d956c96</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2522,6 +2762,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>MonthYear</ElementName>
                 <Name>MonthYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2535,14 +2776,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>db610be6-b9ab-46d5-bdd5-417069636025</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2554,6 +2795,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>Quarter</ElementName>
                 <Name>Quarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2567,14 +2809,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>e346d9b6-a382-4e9c-b17f-eab39c6e2f38</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2586,6 +2828,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>QuarterName</ElementName>
                 <Name>QuarterName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2599,14 +2842,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>62f1024c-d202-4d3d-b76b-96a3956041b1</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2618,6 +2861,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>ShortMonthName</ElementName>
                 <Name>ShortMonthName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2631,14 +2875,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>3b61955e-7207-4846-8f0f-e8a60ef1b1b1</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2650,6 +2894,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>WeekOfMonth</ElementName>
                 <Name>WeekOfMonth</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2663,14 +2908,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>aecee798-6337-425d-b159-e4c670d10c34</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2682,6 +2927,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>WeekOfQuarter</ElementName>
                 <Name>WeekOfQuarter</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2695,14 +2941,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>0288930d-da2f-49ea-841d-8bdb3559e266</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2714,6 +2960,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>WeekOfYear</ElementName>
                 <Name>WeekOfYear</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2727,14 +2974,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>ff88e903-c627-4ddd-ab44-9c575d41a168</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2746,6 +2993,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>Year</ElementName>
                 <Name>Year</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2759,14 +3007,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>false</IsUnique>
             <UniqueId>4e84ac4d-6cbd-4523-85b5-48c9e43fe399</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>false</IsPrimaryKeyConstraint>
             <IsClustered>false</IsClustered>
@@ -2778,6 +3026,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>YearName</ElementName>
                 <Name>YearName</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -2791,14 +3040,14 @@
             <IncludeColumns />
             <TableDatabase>DW_Demo_InvoiceAndOrders</TableDatabase>
             <Id>0</Id>
-            <Schema>dbo</Schema>
+            <Schema />
             <IsUnique>true</IsUnique>
             <UniqueId>c57498be-8aed-42ef-91aa-76bafb20936c</UniqueId>
             <IsUniqueConstraint>false</IsUniqueConstraint>
             <EntityId>
               <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
             </EntityId>
-            <TableSchema />
+            <TableSchema>dbo</TableSchema>
             <TableName>DateDimension</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -2810,6 +3059,7 @@
             <Columns>
               <IndexColumn>
                 <Sequence>0</Sequence>
+                <ElementName>Key</ElementName>
                 <Name>Key</Name>
                 <IsDescending>false</IsDescending>
                 <ElementId>
@@ -3481,7 +3731,7 @@
             <EntityId>
               <Id>2cf126c9-28e8-4382-868b-9c54157b367a</Id>
             </EntityId>
-            <TableSchema>Dimension</TableSchema>
+            <TableSchema />
             <TableName>City</TableName>
             <IsPrimaryKeyConstraint>true</IsPrimaryKeyConstraint>
             <IsClustered>true</IsClustered>
@@ -5727,66 +5977,6 @@
   <Maps />
   <Relationships>
     <FlowDocumentItemRelationship>
-      <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
-      <Elements>
-        <FlowDocumentRelationshipElement>
-          <ParentElement>Key</ParentElement>
-          <ChildElement>Delivery_Date_Key</ChildElement>
-          <ParentElementId>
-            <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-          </ParentElementId>
-          <ChildElementId>
-            <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
-          </ChildElementId>
-        </FlowDocumentRelationshipElement>
-      </Elements>
-      <ErrorType>NoError</ErrorType>
-      <ParentActionName>DateDimension</ParentActionName>
-      <ChildActionName>Sale</ChildActionName>
-      <ConstraintName>FK_DateDimension_Sales</ConstraintName>
-      <IsMandatory>false</IsMandatory>
-      <RelationshipType>Referenced</RelationshipType>
-      <Cardinality>OneToMany</Cardinality>
-      <ParentAlias>DateDimension</ParentAlias>
-      <ChildAlias>Sale</ChildAlias>
-      <ParentId>
-        <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-      </ParentId>
-      <ChildId>
-        <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-      </ChildId>
-    </FlowDocumentItemRelationship>
-    <FlowDocumentItemRelationship>
-      <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
-      <Elements>
-        <FlowDocumentRelationshipElement>
-          <ParentElement>Key</ParentElement>
-          <ChildElement>Invoice_Date_Key</ChildElement>
-          <ParentElementId>
-            <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
-          </ParentElementId>
-          <ChildElementId>
-            <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
-          </ChildElementId>
-        </FlowDocumentRelationshipElement>
-      </Elements>
-      <ErrorType>NoError</ErrorType>
-      <ParentActionName>DateDimension</ParentActionName>
-      <ChildActionName>Sale</ChildActionName>
-      <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
-      <IsMandatory>true</IsMandatory>
-      <RelationshipType>Parent</RelationshipType>
-      <Cardinality>OneToMany</Cardinality>
-      <ParentAlias>DateDimension1</ParentAlias>
-      <ChildAlias>Sale1</ChildAlias>
-      <ParentId>
-        <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
-      </ParentId>
-      <ChildId>
-        <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
-      </ChildId>
-    </FlowDocumentItemRelationship>
-    <FlowDocumentItemRelationship>
       <UniqueId>51f2e10b-cd4f-4f74-8312-30ed3381e8d2</UniqueId>
       <Elements>
         <FlowDocumentRelationshipElement>
@@ -5936,9 +6126,69 @@
         <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
       </ChildId>
     </FlowDocumentItemRelationship>
+    <FlowDocumentItemRelationship>
+      <UniqueId>e09e830c-f05e-4a4f-91f9-07a33ea6cff0</UniqueId>
+      <Elements>
+        <FlowDocumentRelationshipElement>
+          <ParentElement>Key</ParentElement>
+          <ChildElement>Delivery_Date_Key</ChildElement>
+          <ParentElementId>
+            <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+          </ParentElementId>
+          <ChildElementId>
+            <Id>c591f0fd-f560-4638-a8a8-85921ddeed8c</Id>
+          </ChildElementId>
+        </FlowDocumentRelationshipElement>
+      </Elements>
+      <ErrorType>NoError</ErrorType>
+      <ParentActionName>DateDimension</ParentActionName>
+      <ChildActionName>Sale</ChildActionName>
+      <ConstraintName>FK_DateDimension_Sales</ConstraintName>
+      <IsMandatory>false</IsMandatory>
+      <RelationshipType>Referenced</RelationshipType>
+      <Cardinality>OneToMany</Cardinality>
+      <ParentAlias>DateDimension</ParentAlias>
+      <ChildAlias>Sale</ChildAlias>
+      <ParentId>
+        <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+      </ParentId>
+      <ChildId>
+        <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+      </ChildId>
+    </FlowDocumentItemRelationship>
+    <FlowDocumentItemRelationship>
+      <UniqueId>f666ea0d-c7fd-44c0-ba05-55dac3398cc2</UniqueId>
+      <Elements>
+        <FlowDocumentRelationshipElement>
+          <ParentElement>Key</ParentElement>
+          <ChildElement>Invoice_Date_Key</ChildElement>
+          <ParentElementId>
+            <Id>879d0d31-6979-4a2e-9b5f-59138f088d3c</Id>
+          </ParentElementId>
+          <ChildElementId>
+            <Id>66a86bc0-b433-4278-ba5c-f8527323578e</Id>
+          </ChildElementId>
+        </FlowDocumentRelationshipElement>
+      </Elements>
+      <ErrorType>NoError</ErrorType>
+      <ParentActionName>DateDimension</ParentActionName>
+      <ChildActionName>Sale</ChildActionName>
+      <ConstraintName>FK_DateDimension1_Sales1</ConstraintName>
+      <IsMandatory>true</IsMandatory>
+      <RelationshipType>Parent</RelationshipType>
+      <Cardinality>OneToMany</Cardinality>
+      <ParentAlias>DateDimension1</ParentAlias>
+      <ChildAlias>Sale1</ChildAlias>
+      <ParentId>
+        <Id>d71549f8-17e7-4d67-a460-2b53a57a48d4</Id>
+      </ParentId>
+      <ChildId>
+        <Id>cc16232d-cebe-4f46-b6c8-1e56dd43f496</Id>
+      </ChildId>
+    </FlowDocumentItemRelationship>
   </Relationships>
   <VisualInfo xsi:type="DataModelFlowDiagramInfo">
-    <UniqueId>1be356ad-11e3-435a-87e6-8dd5f1f1979f</UniqueId>
+    <UniqueId>3ba87691-b12f-4256-9a10-f78a9530574f</UniqueId>
     <Actions />
     <DocumentBounds>
       <Location>
