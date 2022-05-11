@@ -256,7 +256,7 @@
             <VcAction>None</VcAction>
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>DataModel1.mdl</Name>
+            <Name>Copy of DataModel1.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
@@ -1015,7 +1015,7 @@
             <VcAction>None</VcAction>
           </ProjectItem>
           <ProjectItem xsi:type="ProjectItemFile">
-            <Name>DataModel1.mdl</Name>
+            <Name>Copy of DataModel1.mdl</Name>
             <ProjectType>Integration</ProjectType>
             <VcAction>None</VcAction>
           </ProjectItem>
